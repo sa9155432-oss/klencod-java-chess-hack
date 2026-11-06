@@ -1,0 +1,23 @@
+version = 2
+
+[module]
+type = "android-app"
+name = "app"
+languageLevel = "JAVA_8"
+output = "build/classes"
+
+[sourceSets.main]
+scope = "IMPLEMENTATION"
+assets = ["src/main/assets"]
+java = ["src/main/java"]
+res = ["src/main/res"]
+
+[android]
+namespace = "com.rommyassatiant.app"
+compileSdk = 34
+minSdk = 24
+targetSdk = 33
+manifest = "src/main/AndroidManifest.xml"
+versionCode = 1
+versionName = "1.0"
+isApplication = true

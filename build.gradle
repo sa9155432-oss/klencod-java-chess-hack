@@ -1,0 +1,15 @@
+// Root build.gradle
+// ملاحظة: repositories معرّفة في settings.gradle فقط.
+
+plugins {
+    id 'com.android.application' version '8.5.2' apply false
+    id 'com.android.library' version '8.5.2' apply false
+}
+
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

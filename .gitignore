@@ -1,0 +1,10 @@
+.gradle/
+**/build/
+local.properties
+*.iml
+.idea/
+*.apk
+*.aab
+.platform/
+.klencod/
+.ds_store
